@@ -1,10 +1,37 @@
 =head1 NAME
 
-Dist::Zilla::Util::FileGenerator - PluginBundle helper to generate files
+Dist::Zilla::Util::FileGenerator - helper to generate files with little repetition in a PluginBundle
 
 =head1 VERSION
 
-version 0.1
+version 0.120090
+
+=head1 METHODS
+
+=head2 combine_with
+
+    my @plugins_with_generated_files = $gen->combine_with( @plain_plugins );
+
+Given an array containing specs for a plugin bundle this method returns an array
+with the necessary exclusions, generators and copiers added.
+
+=head2 generators
+
+    my @generator_plugins = $gen->generators;
+
+Returns an array with the necessary generators for inclusion in a plugin bundle.
+
+=head2 file_names
+
+    my @generated_files = $gen->file_names;
+
+Returns an array with the file names of the generated files.
+
+=head2 copiers
+
+    my @generated_files = $gen->copiers;
+
+Returns an array with the necessary copiers for inclusion in a plugin bundle.
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders
 
@@ -21,9 +48,9 @@ You will be notified automatically of any progress on your issue.
 This is open source software.  The code repository is available for
 public review and contribution under the terms of the license.
 
-L<https://github.com/user/repo>
+L<https://github.com/wchristian/dist-zilla-util-filegenerator>
 
-  git clone https://github.com/user/repo.git
+  git clone https://github.com/wchristian/dist-zilla-util-filegenerator.git
 
 =head1 AUTHOR
 

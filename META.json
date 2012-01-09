@@ -1,5 +1,5 @@
 {
-   "abstract" : "PluginBundle helper to generate files",
+   "abstract" : "helper to generate files with little repetition in a PluginBundle",
    "author" : [
       "Christian Walde <walde.christian@googlemail.com>"
    ],
@@ -52,7 +52,7 @@
    "provides" : {
       "Dist::Zilla::Util::FileGenerator" : {
          "file" : "lib/Dist/Zilla/Util/FileGenerator.pm",
-         "version" : "0.1"
+         "version" : "0.120090"
       }
    },
    "release_status" : "stable",
@@ -61,13 +61,13 @@
          "mailto" : "bug-dist-zilla-util-filegenerator at rt.cpan.org",
          "web" : "http://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Util-FileGenerator"
       },
-      "homepage" : "http://homepage",
+      "homepage" : "https://github.com/wchristian/dist-zilla-util-filegenerator",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/user/repo.git",
-         "web" : "https://github.com/user/repo"
+         "url" : "https://github.com/wchristian/dist-zilla-util-filegenerator.git",
+         "web" : "https://github.com/wchristian/dist-zilla-util-filegenerator"
       }
    },
-   "version" : 0.1
+   "version" : "0.120090"
 }
 
