@@ -12,5 +12,5 @@ done_testing;
 exit;
 
 sub run {
-
+    ok( Dist::Zilla::Util::FileGenerator->new( source => "moo", files => [] ) );
 }
